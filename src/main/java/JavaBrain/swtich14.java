@@ -11,7 +11,8 @@ public class swtich14 {
         Scanner sc = new Scanner(System.in);
         System.out.println("Please enter a day:");
         String day = sc.nextLine();
-        int numLetters = switch (day) {
+
+        int numLetters = switch (day.toUpperCase()) {
             case "MONDAY", "FRIDAY", "SUNDAY" -> 6;
             case "TUESDAY" -> 7;
             case "THURSDAY", "SATURDAY" -> 8;
