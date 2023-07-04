@@ -32,38 +32,40 @@ public class loops {
     }
 
     public static void nestedLoop() {
-        int[][] nums= new int[10][20];
+        int[][] nums = new int[10][20];
         for (int i = 0; i < 5; i++) {
-            for (int j= 0; j < 10 ; j++) {
-   //             nums[i][j] = i*j;
-                System.out.println(i*j);
+            for (int j = 0; j < 10; j++) {
+                //             nums[i][j] = i*j;
+                System.out.println(i * j);
             }
         }
     }
-     public  static void ForEachTwoDimensional () {
-         int[][] someNums= new int[10][20];
-         for (int[] subArray: someNums) {
-             for (int a : subArray) {
-                 System.out.println("element is "+ a);
-             }
 
-         }
+    public static void ForEachTwoDimensional() {
+        int[][] someNums = new int[10][20];
+        for (int[] subArray : someNums) {
+            for (int a : subArray) {
+                System.out.println("element is " + a);
+            }
+
+        }
 
 
-     }
+    }
 
-     public  static void  whileLoop() {
+    public static void whileLoop() {
 
-     }
+    }
 
-     public  static void doWhileLoop() {
+    public static void doWhileLoop() {
 
-     }
+    }
+
     public static void main(String[] args) {
-    //multiValueLoop();
-    //multiLoop();
-      //  forEacLoop();
-      //  nestedLoop();
+        //multiValueLoop();
+        //multiLoop();
+        //  forEacLoop();
+        //  nestedLoop();
         ForEachTwoDimensional();
     }
 }
