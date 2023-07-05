@@ -54,10 +54,17 @@ public class loops {
     }
 
     public static void whileLoop() {
-
+        int  nums = 0;
+        while ( nums < 5) {
+            System.out.println(nums++);
+            }
     }
 
     public static void doWhileLoop() {
+        int num = 10;
+        do {
+            System.out.println(num--);
+        }while (num > 5);
 
     }
 
@@ -66,6 +73,8 @@ public class loops {
         //multiLoop();
         //  forEacLoop();
         //  nestedLoop();
-        ForEachTwoDimensional();
+        //ForEachTwoDimensional();
+        //whileLoop();
+        doWhileLoop();
     }
 }
