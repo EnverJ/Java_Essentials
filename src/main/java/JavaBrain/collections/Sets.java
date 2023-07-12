@@ -1,2 +1,4 @@
-package JavaBrain.collections;public class Sets {
+package JavaBrain.collections;
+
+public class Sets {
 }

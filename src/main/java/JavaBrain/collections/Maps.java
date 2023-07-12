@@ -1,2 +1,4 @@
-package JavaBrain.collections;public class Maps {
+package JavaBrain.collections;
+
+public class Maps {
 }
