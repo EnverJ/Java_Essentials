@@ -2,7 +2,7 @@ package JavaBrain.collections;
 
 import java.util.Objects;
 
-public class Student {
+public class Student implements Comparable<Student>{
     private  String firstName;
     private String lastName;
     private int id;
@@ -72,5 +72,24 @@ public class Student {
         this.department = department;
     }
 
+    public String toString() {
+        return "Student{"+
+                "firstName= " + firstName+ '\'' +
+                ", lastname='" + lastName + '\'' +
+                ", department='" + department+ '\'' +
+                '}';
+    }
+
+
+    @Override
+    public int compareTo(Student o) {
+        if (this.id > o.getId()){
+            return 1;
+        } else if (this.id < o.getId()) {
+            return -1;
+        }
+        return 0;
+        //return this.id - o.getId();
+    }
 
 }
