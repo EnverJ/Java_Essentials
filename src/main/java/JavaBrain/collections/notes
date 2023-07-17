@@ -1,0 +1,24 @@
+24. the Collection interface. Not to be confused with collections class
+ the Collection interface:
+ Lowest common denominator
+ To support all Collections
+ https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html
+
+ Method Types:
+ Add: add(), addAll()
+ Remove: remove, removeAll, clear, retailAll
+ inspect: isEmpty, size
+ Process: iterator, stream, toArray
+
+
+ 26. The Collection interface
+ . Root interface in the collection hierarchy
+ . No direct implementation in the JDK
+ . Sub interfaces for collection types - like Set, Lists
+ . Generic method for adding adn removing elements from the collection
+ . Underlying implementation decides what happens when the methods are called
+
+ 27. Lists
+ An ordered collection of elements
+
+

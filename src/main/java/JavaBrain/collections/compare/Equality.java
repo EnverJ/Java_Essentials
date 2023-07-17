@@ -1,4 +1,4 @@
-package JavaBrain.collections;
+package JavaBrain.collections.compare;
 
 import java.util.ArrayList;
 
@@ -18,7 +18,8 @@ public class Equality {
 
 
         System.out.println(student1 == student2);  //false  this can not be fixed.
-        System.out.println(student1.equals(student2));  //false this can be fixed.
+        System.out.println(student1.equals(student2));  //false this can be fixed.  [Student{firstName= jan', lastname='Baz', department='Science'}, Student{firstName= gul', lastname='Baz', department='Science'}, Student{firstName= foo', lastname='Baz', department='Science'}, Student{firstName= foo', lastname='Baz', department='Science'}]
+
         // root cause: they are in two different heats
         // casting alt insert
 
@@ -29,7 +30,8 @@ public class Equality {
         students.add(student4);
         students.add(student1);
         students.add(student2);
-        students.sort(null);
+       // students.sort(null);  this is for comparable
+        students.sort(new StudentLastNameComparator()); // this is comparable
         System.out.println(students);
 // [Student{firstName= foo', lastname='Baz', department='Science'}, Student{firstName= foo', lastname='Baz', department='Science'}, Student{firstName= jan', lastname='Baz', department='Science'}, Student{firstName= gul', lastname='Baz', department='Science'}]
 

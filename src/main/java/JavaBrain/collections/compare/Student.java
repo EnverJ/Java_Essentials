@@ -1,6 +1,4 @@
-package JavaBrain.collections;
-
-import java.util.Objects;
+package JavaBrain.collections.compare;
 
 public class Student implements Comparable<Student>{
     private  String firstName;
@@ -91,5 +89,9 @@ public class Student implements Comparable<Student>{
         return 0;
         //return this.id - o.getId();
     }
+
+    // comparator interface
+    // can compare item by different combinations.
+    // takes comparator instance as argument
 
 }
