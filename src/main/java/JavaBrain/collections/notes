@@ -20,5 +20,43 @@
 
  27. Lists
  An ordered collection of elements
+ Common usecase
+Storing items in order with index based access
+ Ex:
+ Student with IDs
+ 1. Add (enroll) new students
+ 2. Process all student in order
+ 3. Access a student's record given ID
+ insertion order:
+ A, B, C ...
+
+ Add operation
+boolean add(E e);
+boolean addAll(Collection<? extends E > c);
+
+void add (int index, E element);
+boolean addAll (int index, Collection<? extends E> c)
+
+Remove Operations
+boolean remove (Object o);
+ boolean RemoveAll(Collection<?>);
+
+Replace
+E set (int index, E element);
+default void replaceAll (UnaryOperator<E> operator) // replace with result of operator
+
+Inspect Operations
+boolean contains(Object o);
+boolean containsAll(Collection<?> c);
+
+Retrieve Operator
+E get (int index);
+List <E> sublist (int fromIndex, toIndex);
+
+Sort
+default void sort (Comparator <? super E> c)
+
+
+
 
 

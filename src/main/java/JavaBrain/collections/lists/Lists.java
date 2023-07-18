@@ -1,4 +1,4 @@
-package JavaBrain.collections;
+package JavaBrain.collections.lists;
 
 import java.util.Date;
 
@@ -17,5 +17,7 @@ public class Lists {
        date[5] = new Date();
        System.out.println(date[5]);
    }
+
+
 
 }
