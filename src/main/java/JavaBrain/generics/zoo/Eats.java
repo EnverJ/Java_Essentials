@@ -1,2 +1,6 @@
-package JavaBrain.generics.zoo;public interface Eats {
+package JavaBrain.generics.zoo;
+
+public interface Eats {
+    public void eat();
+
 }
