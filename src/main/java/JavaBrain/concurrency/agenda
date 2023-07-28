@@ -1,0 +1,27 @@
+. Thread
+ --> A thread is a single sequential flow of control within a program
+     . Single sequential flow of control
+     . Sequence of programming instruction that can be managed independently
+     . Allows the program to split into simultaneously running tasks
+. Process
+. Using threads
+. Daemon threads
+. Life cycle and threads states
+. Sleeping, joining and interrupting threads
+
+
+. Race condition
+. Synchronization
+. Monitors and structured locking
+. The volatile keyword
+. Thread local
+
+
+. Advanced concurrency APIs
+. Unstructured locks
+. Executor service
+. Callables and future
+. Semaphores
+. Fork join framework
+
+
