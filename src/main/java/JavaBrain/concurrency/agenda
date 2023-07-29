@@ -3,11 +3,21 @@
      . Single sequential flow of control
      . Sequence of programming instruction that can be managed independently
      . Allows the program to split into simultaneously running tasks
-. Process
+. Process    Execution --> process
 . Using threads
 . Daemon threads
 . Life cycle and threads states
 . Sleeping, joining and interrupting threads
+           --> Binary instruction loaded into memory
+              Gets access to resources like a memory
+              (Its own stack, Heap, Registers)
+               Resource is protected from other process
+               Does its ting
+           --> process are running independent.
+
+
+   Process vs thread
+  Default   execution mode og a process is concurrent.
 
 
 . Race condition
