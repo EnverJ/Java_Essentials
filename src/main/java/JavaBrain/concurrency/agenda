@@ -19,13 +19,25 @@
    Process vs thread
   Default   execution mode og a process is concurrent.
 
+  Need more threads?
+    Created using a language API
+       Thread Class
+         classical Concurrency APIs
+         Runnable -- Interface
+          Something that cab be run. Has a run method.
+
+
+
+
 
 . Race condition
 . Synchronization
 . Monitors and structured locking
 . The volatile keyword
 . Thread local
-
+    Thread stop:
+            when the run method returns.
+            An exception is thrown
 
 . Advanced concurrency APIs
 . Unstructured locks
