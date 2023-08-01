@@ -19,6 +19,7 @@ public class B_PrimeNumberWithConcurrency {
                 }
             };
        Thread t = new Thread(r);
+       t.setDaemon(true);  // Daemon Thread. rnd the thread life cycle before completion
        t.start();
 
         }

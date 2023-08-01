@@ -27,6 +27,30 @@
           Something that cab be run. Has a run method.
 
 
+          Actual Thread State:
+          . New
+          . Runnable
+          . Blocked
+          . Waiting
+          . Timed Waiting
+
+
+
+                       Running
+                          ^
+                          |
+                          |
+                          |       -----> blocked
+                          |         ------> Waiting
+          O ---New --->Runnable   -----> Timed Waiting
+                          |
+                          |
+                          ^
+                         Terminated
+
+
+                  google public static enum Thread.State
+
 
 
 
