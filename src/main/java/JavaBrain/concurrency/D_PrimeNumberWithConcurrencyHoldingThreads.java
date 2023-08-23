@@ -9,7 +9,17 @@ public class D_PrimeNumberWithConcurrencyHoldingThreads {
         List<Thread> threads = new ArrayList<>();
 
         Runnable statusReporter = () -> {
-          printThread(threads);
+            try {
+                while (true) {
+
+                    Thread.sleep(5000);
+                    printThread(threads);
+                }
+
+            } catch (InterruptedException e) {
+                System.out.println("Interrupted");
+            }
+
         };
 
         Thread reporterThread = new Thread(statusReporter);
@@ -19,7 +29,7 @@ public class D_PrimeNumberWithConcurrencyHoldingThreads {
             Scanner sc = new Scanner(System.in);
             System.out.println("\n I can tell you the nth prime number. Enter n: ");
             int n = sc.nextInt();
-            if ( n == 0) {
+            if (n == 0) {
                 reporterThread.interrupt();
                 break;
             }
